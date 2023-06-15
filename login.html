@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Interface</title>
+  <link rel="stylesheet" type="text/css" href="css/login_styles.css">
+  <link rel="stylesheet" href="">
+</head>
+<body>
+  <div class="container">
+    <form onsubmit="return validateCredentials()">
+      <h2>Login</h2>
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p id="error-msg" class="error-msg"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
